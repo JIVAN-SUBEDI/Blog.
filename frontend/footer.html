@@ -1,0 +1,33 @@
+<footer class="bg-dark mt-5">
+    <div class="container section">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <a class="d-inline-block mb-4 pb-2" href="/">
+            <h3 class="text-white">
+
+              {{about.name}}
+            </h3>
+          </a>
+          <ul class="p-0 d-flex navbar-footer mb-0 list-unstyled">
+            <li class="nav-item my-0"> <a class="nav-link" href="/">Home</a></li>
+            {% for category in categories %}
+            <li class="nav-item my-0"> <a class="nav-link" href="/articles/{{category.slug}}">{{category.name}}</a></li>
+            {% endfor %}
+            <li class="nav-item my-0"> <a class="nav-link" href="/about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright bg-dark content">Copyright &copy; Jivan Subedi. All Right Reserved</a></div>
+  </footer>
+  
+  
+  <!-- # JS Plugins -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+  
+  </body>
+  </html>

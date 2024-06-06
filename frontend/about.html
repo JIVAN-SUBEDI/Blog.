@@ -1,0 +1,26 @@
+{% include "header.html" %}
+<title>About</title>
+<main>
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 ">
+					<div class="breadcrumbs mb-4"> <a href="/">Home</a>
+						<span class="mx-1">/</span>  <a href="/about">About</a>
+					</div>
+				</div>
+				<div class="col-lg-8 mx-auto mb-5 mb-lg-0">
+					<img loading="lazy" decoding="async" src="{{about.image.url}}" class="img-fluid w-100 mb-4" alt="Author Image">
+					<h1 class="mb-4">{{about.name}}</h1>
+					<div class="content">
+						{{about.desc | safe}}
+					</div>
+				</div>
+        <div class="col-lg-4">
+          {% include "sidebar.html" %}
+      </div>
+			</div>
+		</div>
+	</section>
+</main>
+{% include "footer.html" %}
