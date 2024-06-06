@@ -46,9 +46,6 @@ Follow these steps to set up the project locally:
 
 ### Clone the Repository
 
-bash
-
-Copy code
 
 `git clone https://github.com/JIVAN-SUBEDI/Blog..git`
 `cd blog.` 
@@ -57,9 +54,6 @@ Copy code
 
 It is recommended to use a virtual environment to manage dependencies.
 
-bash
-
-Copy code
 
 ``python -m venv env
 source env/bin/activate  # On Windows, use `env\Scripts\activate` `` 
